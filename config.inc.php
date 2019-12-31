@@ -1,0 +1,11 @@
+<?php
+	session_start();
+	$username="root";
+	$password="";
+	$host="localhost";
+	$database="sale";
+	$connect=mysqli_connect($host,$username,$password,$database);
+	mysqli_set_charset($connect,"utf8");
+	if($connect!=true)
+		echo"die";
+?>
